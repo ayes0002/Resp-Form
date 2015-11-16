@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+   <div class="wrapper">
+    	<header class="masthead">
+        	<h1>Online Form</h1>
+        </header>
+        <section class="main">
+        	<h2>User Reg.</h2>
+            <form action="register.php" method="post" enctype="application/x-www-form-urlencoded">
+            	<div class="box">
+                    <label class="label">Username</label>
+                    <input type="text" name="text" id="text" placeholder="Username" required maxlength="50" class="size">
+                </div>
+    
+                <div class="box">
+                    <label class="label">Email</label>
+                    <input type="email" name="email" id="email" placeholder="E-mail address" required maxlength="50" class="size">
+                </div>
+    
+                <div class="box">
+                    <label class="label">Website</label>
+                    <input type="url" name="url" id="url" placeholder="Website" required maxlength="40" class="size">
+                </div>
+    
+                <div class="box">
+                    <label class="label">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Password" required maxlength="20" class="size">
+                </div>
+               
+                <div class="btn">
+                	<input type="submit" name="btnSubmit" id="btnSubmit" value="Submit" class="btn"/>
+                </div>
+            </form>
+        </section>
+        <footer class="footer">
+            <p>&copy; HAL Inc.</p>
+        </footer>
+    </div>
+</body>
+</html>
